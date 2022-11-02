@@ -1,4 +1,4 @@
-use std::{time::SystemTime};
+use std::time::SystemTime;
 
 pub fn day3_part1() {
     println!("--------------DAY 3 part1--------------");
@@ -67,8 +67,9 @@ fn calculate_epsilon_rate(bits_sum_by_possition: &Vec<u32>, input_len: &usize) -
 
 #[cfg(test)]
 mod tests {
-    use crate::day3::part1::{get_bits_sum_by_possition, calculate_gamma_rate, calculate_epsilon_rate};
-
+    use crate::day3::part1::{
+        calculate_epsilon_rate, calculate_gamma_rate, get_bits_sum_by_possition,
+    };
 
     #[test]
     fn calculate_power_consumption_test() {
